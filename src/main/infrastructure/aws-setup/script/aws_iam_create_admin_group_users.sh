@@ -35,7 +35,7 @@ while :; do
 			;;
 			
 		# Unkown option.
-		-?*)
+		?*)
 			printf 'WARN: Unknown option (ignored): %s\n' "${1}" >&2
 			;;
 
