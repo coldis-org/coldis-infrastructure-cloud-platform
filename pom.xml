@@ -11,7 +11,7 @@
 	</parent>
 
 	<groupId>org.coldis.infrastructure</groupId>
-	<artifactId>utils-operational</artifactId>
+	<artifactId>infrastructure</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
