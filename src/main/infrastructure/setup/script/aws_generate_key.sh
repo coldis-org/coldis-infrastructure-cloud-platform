@@ -44,7 +44,7 @@ set -o nounset
 trap - INT TERM
 
 # Print arguments if on debug mode.
-${DEBUG} && echo  "Running 'aws_iamgenerate_key'"
+${DEBUG} && echo  "Running 'aws_generate_key'"
 ${DEBUG} && echo  "OUTPUT_KEY_FILE=${OUTPUT_KEY_FILE}"
 
 ssh-keygen -t rsa -N "" -f ${OUTPUT_KEY_FILE}
