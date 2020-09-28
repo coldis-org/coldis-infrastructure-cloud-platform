@@ -1,9 +1,10 @@
-FROM mesosphere/aws-cli:1.14.5
+FROM amazon/aws-cli:2.0.22
 
-# Installs jq.
-RUN apk --update add jq && \
-	rm -rf /var/lib/apt/lists/* && \
-	rm /var/cache/apk/*
+# Installs jq and dig.
+RUN yum update -y && \
+	yum install -y jq bind-utils && \
+    yum clean -y all && \
+    rm -rf /var/cache/yum
 
 # Copies the scripts.
 RUN mkdir -p /opt/aws-script
